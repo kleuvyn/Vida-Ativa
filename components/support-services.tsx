@@ -71,11 +71,11 @@ export function SupportServices() {
               <div className="flex items-center space-x-3">
                 <div className="p-2 bg-red-100 rounded-full text-red-600">{contact.icon}</div>
                 <div>
-                  <h4 className="font-medium text-gray-800">{contact.title}</h4>
-                  <p className="text-sm text-gray-600">{contact.description}</p>
+                  <h4 className="font-medium text-purple-300">{contact.title}</h4>
+                  <p className="text-sm text-purple-800 ">{contact.description}</p>
                 </div>
               </div>
-              <Button size="sm" className="bg-red-500 hover:bg-red-600 text-white">
+              <Button size="sm" className="bg-red-500 hover:bg-red-600 text-purple-900">
                 {contact.action}
               </Button>
             </div>
@@ -86,11 +86,11 @@ export function SupportServices() {
       {/* Support Services */}
       <div className="grid md:grid-cols-2 gap-6">
         {services.map((service, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow border-pink-100">
+          <Card key={index} className="hover:shadow-lg transition-shadow border-purple-100">
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="p-3 bg-gradient-to-br from-pink-50 to-purple-50 rounded-full">{service.icon}</div>
+                  <div className="p-3 bg-gradient-to-br from-purple-50 to-purple-50 rounded-full">{service.icon}</div>
                   <div>
                     <CardTitle className="text-lg">{service.title}</CardTitle>
                     <div className="flex items-center space-x-2 mt-1">
@@ -106,7 +106,7 @@ export function SupportServices() {
 
               <div className="space-y-3">
                 <div>
-                  <h4 className="text-sm font-medium text-gray-800 mb-2">Serviços inclusos:</h4>
+                  <h4 className="text-sm font-medium text-purple-300 mb-2">Serviços inclusos:</h4>
                   <div className="flex flex-wrap gap-1">
                     {service.features.map((feature, idx) => (
                       <Badge key={idx} variant="secondary" className="text-xs">
@@ -116,7 +116,7 @@ export function SupportServices() {
                   </div>
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">
+                <Button className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700">
                   {service.contact}
                 </Button>
               </div>
@@ -126,31 +126,31 @@ export function SupportServices() {
       </div>
 
       {/* Additional Resources */}
-      <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Recursos Adicionais</h3>
+      <div className="bg-gradient-to-r from-purple-50 to-purple-50 rounded-lg p-6">
+        <h3 className="text-lg font-semibold text-purple-300 mb-4">Recursos Adicionais</h3>
         <div className="grid md:grid-cols-3 gap-4">
           <div className="text-center">
             <div className="p-3 bg-white rounded-full w-fit mx-auto mb-2">
-              <Shield className="h-6 w-6 text-pink-500" />
+              <Shield className="h-6 w-6 text-purple-500" />
             </div>
-            <h4 className="font-medium text-gray-800">Plano de Segurança</h4>
-            <p className="text-sm text-gray-600">Crie um plano personalizado de proteção</p>
+            <h4 className="font-medium text-purple-300">Plano de Segurança</h4>
+            <p className="text-sm text-purple-800 ">Crie um plano personalizado de proteção</p>
           </div>
 
           <div className="text-center">
             <div className="p-3 bg-white rounded-full w-fit mx-auto mb-2">
               <Users className="h-6 w-6 text-purple-500" />
             </div>
-            <h4 className="font-medium text-gray-800">Grupos de Apoio</h4>
-            <p className="text-sm text-gray-600">Conecte-se com outras mulheres</p>
+            <h4 className="font-medium text-purple-300">Grupos de Apoio</h4>
+            <p className="text-sm text-purple-800 ">Conecte-se com outras mulheres</p>
           </div>
 
           <div className="text-center">
             <div className="p-3 bg-white rounded-full w-fit mx-auto mb-2">
               <BookOpen className="h-6 w-6 text-blue-500" />
             </div>
-            <h4 className="font-medium text-gray-800">Material Educativo</h4>
-            <p className="text-sm text-gray-600">Guias e recursos informativos</p>
+            <h4 className="font-medium text-purple-300">Material Educativo</h4>
+            <p className="text-sm text-purple-800 ">Guias e recursos informativos</p>
           </div>
         </div>
       </div>

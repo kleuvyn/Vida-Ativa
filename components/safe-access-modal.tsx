@@ -84,7 +84,7 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <div className="flex items-center space-x-2">
-            <Shield className="h-6 w-6 text-pink-500" />
+            <Shield className="h-6 w-6 text-purple-500" />
             <DialogTitle>
               {step === 1 && "Solicitar Acesso Seguro"}
               {step === 2 && "Verificar Código"}
@@ -139,7 +139,7 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
             </div>
 
             <div className="flex space-x-2">
-              <Button onClick={handleRequestCode} className="flex-1 bg-pink-500 hover:bg-pink-600" disabled={isLoading}>
+              <Button onClick={handleRequestCode} className="flex-1 bg-purple-500 hover:bg-purple-600" disabled={isLoading}>
                 {isLoading ? "Enviando..." : `Enviar Código por ${contactMethod === "email" ? "Email" : "SMS"}`}
               </Button>
               <Button variant="outline" onClick={handleClose} className="flex-1 bg-transparent">
@@ -189,7 +189,7 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
             </div>
 
             <div className="flex space-x-2">
-              <Button onClick={handleCodeSubmit} className="flex-1 bg-pink-500 hover:bg-pink-600">
+              <Button onClick={handleCodeSubmit} className="flex-1 bg-purple-500 hover:bg-purple-600">
                 Verificar Código
               </Button>
               <Button variant="outline" onClick={() => setStep(1)} className="flex-1">
@@ -203,7 +203,7 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
                 variant="link"
                 size="sm"
                 onClick={handleRequestCode}
-                className="text-xs text-gray-500 hover:text-pink-600"
+                className="text-xs text-gray-500 hover:text-purple-900"
               >
                 Não recebeu o código? Reenviar
               </Button>
@@ -227,7 +227,7 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
               </AlertDescription>
             </Alert>
 
-            <div className="text-sm text-gray-600 space-y-2">
+            <div className="text-sm text-purple-800  space-y-2">
               <p>
                 <strong>Serviços disponíveis:</strong>
               </p>
@@ -241,8 +241,8 @@ export function SafeAccessModal({ open, onOpenChange, onAccessGranted }: SafeAcc
               </ul>
             </div>
 
-            <div className="bg-pink-50 border border-pink-200 rounded-lg p-3">
-              <p className="text-xs text-pink-800">
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
+              <p className="text-xs text-purple-800">
                 <strong>Importante:</strong> Sua sessão no modo seguro expira automaticamente após 2 horas de
                 inatividade por questões de segurança.
               </p>

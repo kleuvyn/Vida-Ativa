@@ -90,7 +90,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
       <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center space-x-2">
-            <Shield className="h-6 w-6 text-pink-500" />
+            <Shield className="h-6 w-6 text-purple-500" />
             <DialogTitle>Verificação de Segurança</DialogTitle>
           </div>
           <DialogDescription>
@@ -124,7 +124,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
                               <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Recomendado</span>
                             )}
                           </div>
-                          <p className="text-sm text-gray-600">{option.description}</p>
+                          <p className="text-sm text-purple-800 ">{option.description}</p>
                         </div>
                       </Label>
                     </div>
@@ -137,7 +137,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
               <Button
                 onClick={() => setStep(2)}
                 disabled={!verificationType}
-                className="flex-1 bg-pink-500 hover:bg-pink-600"
+                className="flex-1 bg-purple-500 hover:bg-purple-600"
               >
                 Continuar
               </Button>
@@ -218,7 +218,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
             </div>
 
             <div className="flex space-x-2">
-              <Button onClick={() => setStep(3)} className="flex-1 bg-pink-500 hover:bg-pink-600">
+              <Button onClick={() => setStep(3)} className="flex-1 bg-purple-500 hover:bg-purple-600">
                 Próximo
               </Button>
               <Button variant="outline" onClick={() => setStep(1)} className="flex-1">
@@ -241,7 +241,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
             <div className="space-y-3">
               <div>
                 <Label>Pergunta de Segurança 1:</Label>
-                <p className="text-sm text-gray-600 mb-2">{safetyQuestions[0]}</p>
+                <p className="text-sm text-purple-800  mb-2">{safetyQuestions[0]}</p>
                 <Textarea
                   value={formData.safetyQuestion1}
                   onChange={(e) => setFormData({ ...formData, safetyQuestion1: e.target.value })}
@@ -252,7 +252,7 @@ export function VerificationModal({ open, onOpenChange, onVerificationComplete }
 
               <div>
                 <Label>Pergunta de Segurança 2:</Label>
-                <p className="text-sm text-gray-600 mb-2">{safetyQuestions[1]}</p>
+                <p className="text-sm text-purple-800  mb-2">{safetyQuestions[1]}</p>
                 <Input
                   value={formData.safetyQuestion2}
                   onChange={(e) => setFormData({ ...formData, safetyQuestion2: e.target.value })}

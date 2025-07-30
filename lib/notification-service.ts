@@ -11,7 +11,7 @@ export class NotificationService {
           subject: "Código de Acesso - Vida Ativa",
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <h2 style="color: #ec4899;">Vida Ativa - Código de Acesso</h2>
+              <h2 style="color: #8b5cf6;">Vida Ativa - Código de Acesso</h2>
               <p>Seu código de acesso seguro é:</p>
               <div style="background: #f3f4f6; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; letter-spacing: 3px; margin: 20px 0;">
                 ${code}

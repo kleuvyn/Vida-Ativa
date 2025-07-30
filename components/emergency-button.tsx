@@ -17,7 +17,7 @@ export function EmergencyButton() {
           className="h-14 w-14 rounded-full bg-red-500 hover:bg-red-600 shadow-lg hover:shadow-xl transition-all duration-200 p-0"
           title="Ajuda de Emergência"
         >
-          <Phone className="h-6 w-6 text-white" />
+          <Phone className="h-6 w-6 text-purple-900" />
         </Button>
       </div>
 
@@ -41,7 +41,7 @@ export function EmergencyButton() {
             {/* Emergency Services */}
             <div className="space-y-3">
               <Button
-                className="w-full bg-red-500 hover:bg-red-600 text-white h-12"
+                className="w-full bg-red-500 hover:bg-red-600 text-purple-900 h-12"
                 onClick={() => window.open("tel:190", "_self")}
               >
                 <Phone className="mr-2 h-5 w-5" />
@@ -49,7 +49,7 @@ export function EmergencyButton() {
               </Button>
 
               <Button
-                className="w-full bg-purple-500 hover:bg-purple-600 text-white h-12"
+                className="w-full bg-purple-500 hover:bg-purple-600 text-purple-900 h-12"
                 onClick={() => window.open("tel:180", "_self")}
               >
                 <Phone className="mr-2 h-5 w-5" />
@@ -63,7 +63,7 @@ export function EmergencyButton() {
 
               <Button
                 variant="outline"
-                className="w-full border-pink-200 text-pink-600 hover:bg-pink-50 h-12 bg-transparent"
+                className="w-full border-purple-200 text-purple-600 text-purple-300 h-12 bg-transparent"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Chat de Emergência 24h
